@@ -28,5 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Hello Toast!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        botonInferior.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer numero = Integer.parseInt(textCentral.getText().toString());
+                numero++;
+                textCentral.setText(numero.toString());
+            }
+        });
     }
 }
